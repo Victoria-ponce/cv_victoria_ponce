@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Victoria Ponce — Portfolio</title>
+  <meta name="description" content="Portfolio de Victoria Ponce, estudiante de Analista en Sistemas." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- AOS Animate on Scroll -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    body { background-color: #000; color: #fff; }
+    .nav-bg { backdrop-filter: blur(6px); background: rgba(0,0,0,0.6); }
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+      z-index: 50;
+      transition: transform 0.2s ease;
+    }
+    .whatsapp-btn:hover { background: #1ebe5d; transform: scale(1.1); }
+    .gradient-text {
+      background: linear-gradient(90deg, #6366f1, #a855f7, #ec4899);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 200% auto;
+      animation: shine 4s linear infinite;
+    }
+    @keyframes shine {
+      0% { background-position: 0% center; }
+      100% { background-position: 200% center; }
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="antialiased">
+  <!-- Navbar -->
+  <header class="fixed top-4 left-0 right-0 z-30 flex justify-center pointer-events-none">
+    <nav class="pointer-events-auto max-w-7xl w-full mx-4 rounded-2xl shadow-md nav-bg px-4 py-2 flex items-center justify-between text-white">
+      <div class="flex items-center gap-4">
+        <a href="#" class="font-semibold text-lg">Victoria Ponce</a>
+        <ul class="hidden md:flex gap-4 text-sm">
+          <li><a href="#home" class="hover:underline">Inicio</a></li>
+          <li><a href="#resume" class="hover:underline">Sobre mí</a></li>
+          <li><a href="#projects" class="hover:underline">Proyectos</a></li>
+        </ul>
+      </div>
+      <div class="flex items-center gap-3">
+        <a class="text-sm px-3 py-1 rounded-md border hover:bg-gray-800" href="#contacto">Contacto</a>
+        <div class="hidden sm:flex gap-2">
+          <a href="https://www.linkedin.com/in/victoriaponce14" target="_blank" class="text-sm">LinkedIn</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="pt-28 max-w-7xl mx-auto px-6">
+    <!-- Hero -->
+    <section id="home" class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center py-12">
+      <div class="md:col-span-2" data-aos="fade-up">
+        <p class="text-2xl font-semibold opacity-80">¡Hola! Soy</p>
+        <h1 class="mt-2 text-4xl md:text-6xl font-extrabold gradient-text">Victoria Ponce</h1>
+        <p class="mt-4 text-lg opacity-90">
+          Estudiante de Analista en Sistemas. Experiencia en ventas, atención al cliente y coordinación operativa. Me apasiona la tecnología y disfruto optimizar procesos y mejorar la experiencia de los usuarios.
+        </p>
+
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="#resume" class="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-indigo-600 text-white hover:scale-105 transition">Sobre mí</a>
+          <a href="#projects" class="inline-flex items-center gap-2 px-4 py-2 rounded-md border border-white hover:scale-105 transition">Proyectos</a>
+          <a href="#contacto" class="inline-flex items-center gap-2 px-4 py-2 rounded-md border border-white hover:scale-105 transition">Contacto</a>
+        </div>
+
+        <p class="mt-8 text-sm opacity-70">
+          En constante aprendizaje: C#, .NET, SQL Server, PHP, testing y metodologías ágiles. Buscando crecer profesionalmente en proyectos desafiantes.
+        </p>
+      </div>
+      <div class="flex justify-center md:justify-end" data-aos="fade-left">
+        <div class="w-52 h-52 rounded-full overflow-hidden shadow-lg bg-black flex items-center justify-center transform hover:scale-105 transition">
+          <img src="7DB10C42-FFFC-41BA-8AE0-B6829792DFC3.JPEG" alt="Foto Victoria" class="w-full h-full object-cover object-center">
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobre mí -->
+    <section id="resume" class="py-12 border-t border-gray-700" data-aos="fade-up">
+      <h2 class="text-3xl font-semibold mb-6">Sobre mí</h2>
+      <p class="mt-3 text-base opacity-90 leading-relaxed">
+        Soy estudiante de Analista en Sistemas en Institución Cervantes (2023 - Actualidad). Me destaco por el liderazgo, la resolución de problemas y la adaptabilidad. Tengo experiencia laboral como Supervisora de Complejo en Cines Dino Alto Verde y como Asesora Comercial en Fotopoint.
+      </p>
+
+      <div class="mt-8 grid md:grid-cols-2 gap-6">
+        <article class="p-6 bg-gray-900 rounded-lg shadow-md transform hover:scale-[1.02] transition" data-aos="fade-right">
+          <h3 class="font-medium text-lg">Experiencia</h3>
+          <ul class="mt-3 text-sm opacity-90 space-y-3">
+            <li><b>Supervisora - Cines Dino Alto Verde</b> (2022 - 2024)<br>Coordinación de equipos, métricas, planificación de turnos.</li>
+            <li><b>Asesora Comercial - Fotopoint</b> (2025 - Actualidad)<br>Ventas en salón, gestión de clientes, atención postventa, atención al cliente por META, encargada de caja, soporte y gestión de stock.</li>
+          </ul>
+        </article>
+
+        <article class="p-6 bg-gray-900 rounded-lg shadow-md transform hover:scale-[1.02] transition" data-aos="fade-left">
+          <h3 class="font-medium text-lg">Cursos & Certificaciones</h3>
+          <ul class="mt-3 text-sm opacity-90 space-y-2">
+            <li>Scrum Master</li>
+            <li>Oratoria</li>
+            <li>Software Tester</li>
+            <li>Prompts de IA</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="projects" class="py-12 border-t border-gray-700" data-aos="fade-up">
+      <h2 class="text-3xl font-semibold mb-6">Proyecto destacado</h2>
+      <div class="bg-gray-900 rounded-lg shadow-md p-6 transform hover:scale-[1.02] transition" data-aos="zoom-in">
+        <h3 class="font-medium text-xl">OviTrace</h3>
+        <p class="mt-3 text-sm opacity-90 leading-relaxed">
+          OviTrace es un sistema diseñado para optimizar la trazabilidad en la producción ovina.  
+          El proyecto abarca el registro digital de animales, control de datos productivos y generación de reportes para productores y técnicos.  
+          Fue desarrollado como trabajo académico en equipo, aplicando buenas prácticas de programación y gestión de proyectos.
+        </p>
+        <div class="mt-3 flex gap-2">
+          <span class="text-xs opacity-60">Proyecto académico universitario</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="py-12 border-t border-gray-700" data-aos="fade-up">
+      <h2 class="text-3xl font-semibold mb-6">Contacto</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="p-6 bg-gray-900 rounded-lg shadow-md transform hover:scale-[1.02] transition" data-aos="fade-right">
+          <h4 class="font-medium">Email</h4>
+          <p class="mt-2 text-sm opacity-80">victoriaponce022022@gmail.com</p>
+        </div>
+        <div class="p-6 bg-gray-900 rounded-lg shadow-md transform hover:scale-[1.02] transition" data-aos="fade-left">
+          <h4 class="font-medium">Teléfono</h4>
+          <p class="mt-2 text-sm opacity-80">+54 3513952414</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 text-center text-sm opacity-70" data-aos="fade-up">
+      Diseñado y desarrollado por Victoria Ponce · Córdoba, Argentina
+    </footer>
+  </main>
+
+  <!-- Botón de WhatsApp -->
+  <a href="https://wa.me/543513952414" target="_blank" class="whatsapp-btn">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Smooth scroll + AOS init -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{
+        const target = document.querySelector(a.getAttribute('href'));
+        if(target){
+          e.preventDefault();
+          target.scrollIntoView({behavior:'smooth', block:'start'});
+        }
+      });
+    });
+  </script>
+</body>
+</html>
